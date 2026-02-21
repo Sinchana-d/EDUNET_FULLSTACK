@@ -1,0 +1,294 @@
+/* =====================
+   GLOBAL STYLES
+===================== */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fdfcff;
+    color: #444;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 50px;
+    background: #CDB4DB;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.navbar h2 {
+    margin: 0;
+    color: white;
+    font-weight: 600;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, #FFC8DD, #BDE0FE);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #5a4e7c;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #6d5f9c;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.primary {
+    background: #A2D2FF;
+    color: white;
+}
+
+.primary:hover {
+    background: #89c6ff;
+}
+
+.secondary {
+    background: #FFC8DD;
+    color: #6d5f9c;
+}
+
+.secondary:hover {
+    background: #ffb3d2;
+}
+
+.danger {
+    background: #FFAFCC;
+    color: white;
+}
+
+.danger:hover {
+    background: #ff9ec3;
+}
+
+/* =====================
+   MAP
+===================== */
+
+#map {
+    height: 85vh;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* =====================
+   FORM
+===================== */
+
+form {
+    background: white;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    font-family: inherit;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    border-color: #A2D2FF;
+}
+
+/* =====================
+   PROFILE
+===================== */
+
+.profile-container {
+    padding: 40px;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    background: #A2D2FF;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.pin-card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.category {
+    background: #CDB4DB;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* =====================
+   AUTH PAGES
+===================== */
+
+.auth-container {
+    max-width: 400px;
+    margin: 80px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.auth-container h2 {
+    color: #6d5f9c;
+}
+
+.auth-switch a {
+    color: #A2D2FF;
+    text-decoration: none;
+}
+
+/* =====================
+   POPUP STYLE
+===================== */
+
+.leaflet-popup-content-wrapper {
+    border-radius: 15px;
+}
+
+.leaflet-popup-content h4 {
+    color: #6d5f9c;
+    margin-bottom: 5px;
+}
+
+
+/* ===============================
+   PASTEL PIN FORM SECTION
+=================================*/
+
+.pin-form-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fdf6ff; /* soft lavender */
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+}
+
+.pin-form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #8e7cc3;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #6d5ba6;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid #e6d8ff;
+    background-color: #fffaff;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #c3b1ff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(195, 177, 255, 0.3);
+}
+
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: #d8c7ff;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #4b3f72;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.save-btn:hover {
+    background: #c3b1ff;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="profile-container">
+
+    <div class="profile-header">
+        <div class="avatar">
+            {{ user.username|first|upper }}
+        </div>
+
+        <div>
+            <h2>{{ user.username }}</h2>
+            <p>{{ user.email }}</p>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div class="stat-box">
+            <h4>Total Pins</h4>
+            <h2>{{ pins.count }}</h2>
+        </div>
+    </div>
+
+    <div class="my-pins">
+        <h3>📌 My Pins</h3>
+
+        {% for pin in pins %}
+            <div class="pin-card">
+                <h4>{{ pin.title }}</h4>
+                <p>{{ pin.description }}</p>
+                <span class="category">{{ pin.category }}</span>
+
+                <div class="pin-actions">
+                    <a href="{% url 'edit_pin' pin.id %}" class="edit-btn">Edit</a>
+                    <a href="{% url 'delete_pin' pin.id %}" class="delete-btn">Delete</a>
+                </div>
+            </div>
+        {% empty %}
+            <p>No pins added yet.</p>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}
